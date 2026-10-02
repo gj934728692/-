@@ -6,7 +6,372 @@
     <!-- 手机端适配 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>高品质户外家具 | WhatsApp咨询</title>
+    <title><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 手机端适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Affordable luxury watches, handbags, and jewelry.</title>
+
+    <meta name="description" content="You can purchase a watch of the same quality for 10% less than the original price.。">
+
+    <!-- ==================================================
+         Meta Pixel（Facebook Pixel）
+         把 YOUR_PIXEL_ID 替换成你的真实 Pixel ID
+         ================================================== -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {
+            if(f.fbq)return;
+            n=f.fbq=function(){
+                n.callMethod ?
+                n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+            };
+
+            if(!f._fbq)f._fbq=n;
+
+            n.push=n;
+            n.loaded=!0;
+            n.version='2.0';
+            n.queue=[];
+
+            t=b.createElement(e);
+            t.async=!0;
+            t.src=v;
+
+            s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)
+        }(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+        // ===== 在这里填写你的 Meta Pixel ID =====
+        fbq('init', '2486355955184193');
+
+        // 页面浏览事件
+        fbq('track', 'PageView');
+    </script>
+
+    <!-- 如果浏览器禁用了 JavaScript，可保留这部分 -->
+    <noscript>
+        <img height="1"
+             width="1"
+             style="display:none"
+             src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "PingFang SC",
+                "Microsoft YaHei",
+                Arial,
+                sans-serif;
+
+            background: #f6f6f4;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 680px;
+            margin: 0 auto;
+            background: #fff;
+            min-height: 100vh;
+        }
+
+        /* 产品主图 */
+        .product-image {
+            width: 100%;
+            display: block;
+            background: #f1f1ef;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        /* 内容区域 */
+        .content {
+            padding: 32px 24px 120px;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 28px;
+            line-height: 1.35;
+            font-weight: 600;
+            margin-bottom: 14px;
+            color: #171717;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        /* 三个核心优势 */
+        .advantages {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .advantage {
+            display: flex;
+            align-items: flex-start;
+            padding: 18px;
+            background: #f7f7f5;
+            border-radius: 12px;
+        }
+
+        .number {
+            width: 30px;
+            height: 30px;
+            min-width: 30px;
+            border-radius: 50%;
+            background: #222;
+            color: #fff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 13px;
+            margin-right: 14px;
+        }
+
+        .advantage h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .advantage p {
+            font-size: 13px;
+            color: #777;
+        }
+
+        /* 底部固定按钮 */
+        .bottom-bar {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+            padding: 12px 16px;
+
+            background: rgba(255, 255, 255, 0.96);
+            border-top: 1px solid #eee;
+
+            z-index: 999;
+        }
+
+        .whatsapp-button {
+            width: 100%;
+            max-width: 648px;
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 52px;
+
+            border: none;
+            border-radius: 10px;
+
+            background: #25D366;
+            color: #fff;
+
+            font-size: 16px;
+            font-weight: 600;
+
+            text-decoration: none;
+            cursor: pointer;
+
+            transition: all 0.2s ease;
+        }
+
+        .whatsapp-button:hover {
+            background: #20bd5a;
+        }
+
+        .whatsapp-button:active {
+            transform: scale(0.98);
+        }
+
+        .whatsapp-icon {
+            margin-right: 8px;
+            font-size: 20px;
+        }
+
+        /* 桌面端 */
+        @media (min-width: 681px) {
+            body {
+                padding: 30px 0;
+            }
+
+            .page {
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+            }
+
+            .bottom-bar {
+                position: static;
+                background: transparent;
+                border: none;
+                padding: 0 24px 30px;
+            }
+
+            .whatsapp-button {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- ==============================
+         产品主图
+         把下面的图片地址替换成你的产品图片
+         ============================== -->
+    <div class="product-image">
+        <img
+            src="https://placehold.co/1200x900/f1f1ef/777?text=PRODUCT+IMAGE"
+            alt="Outdoor Furniture"
+        >
+    </div>
+
+
+    <main class="content">
+
+        <div class="eyebrow">
+            We are located in Guangzhou, China, home to the world's largest market for affordable luxury goods.
+        </div>
+
+        <h1>
+           Specializing in affordable luxury watches, handbags, footwear, apparel, and jewelry.
+        </h1>
+
+        <p class="subtitle">
+           Why Choose Us
+        </p>
+
+
+        <!-- ==============================
+             三条产品核心优势
+             ============================== -->
+        <div class="advantages">
+
+            <div class="advantage">
+                <div class="number">01</div>
+
+                <div>
+                    <h3>high-quality</h3>
+                    <p>
+                        Features a high-quality Swiss movement and a sapphire crystal.。
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="advantage">
+                <div class="number">02</div>
+
+                <div>
+                    <h3>Safety and Security</h3>
+                    <p>
+                        Secure PayPal payments accepted; Swiss movement calibration provided; high-definition, comprehensive QC video supplied prior to shipment.。
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="advantage">
+                <div class="number">03</div>
+
+                <div>
+                    <h3>Logistics and Distribution</h3>
+                    <p>
+                        We offer discreet customs clearance and fully insured global express shipping, ensuring zero risk of customs inspection and rapid delivery within 5–10 days.。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ==============================
+         WhatsApp 底部按钮
+         ============================== -->
+    <div class="bottom-bar">
+
+        <a
+            class="whatsapp-button"
+            href="https://wa.me/8618943593639"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="trackWhatsAppClick()"
+        >
+            <span class="whatsapp-icon">◉</span>
+            WhatsAppInquire for details
+        </a>
+
+    </div>
+
+</div>
+
+
+<script>
+    /**
+     * WhatsApp 按钮点击事件
+     *
+     * 用户点击按钮时：
+     * 1. 触发 Meta Pixel Contact 事件
+     * 2. 然后正常跳转 WhatsApp
+     */
+    function trackWhatsAppClick() {
+
+        if (typeof fbq === 'function') {
+            fbq('track', 'Contact');
+        }
+
+    }
+</script>
+
+</body>
+</html> | WhatsApp咨询</title>
 
     <meta name="description" content="高品质户外家具，适用于庭院、露台、酒店及商业空间。欢迎通过 WhatsApp 咨询产品详情。">
 
@@ -267,7 +632,7 @@
     <main class="content">
 
         <div class="eyebrow">
-            We are located in Guangzhou, China, home to the world's largest market for affordable luxury goods.
+            Welcome to our homepage.We are located in Guangzhou, China, home to the world's largest market for affordable luxury goods.
         </div>
 
         <h1>
