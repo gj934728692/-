@@ -1,373 +1,339 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <!-- 手机端适配 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespoke Super Clone Watches - 1:1 Swiss Craftsmanship</title>
 
-    <title><!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-
-    <!-- 手机端适配 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Affordable luxury watches, handbags, and jewelry.</title>
-
-    <meta name="description" content="You can purchase a watch of the same quality for 10% less than the original price.。">
-
-    <!-- ==================================================
-         Meta Pixel（Facebook Pixel）
-         把 YOUR_PIXEL_ID 替换成你的真实 Pixel ID
-         ================================================== -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {
-            if(f.fbq)return;
-            n=f.fbq=function(){
-                n.callMethod ?
-                n.callMethod.apply(n,arguments) : n.queue.push(arguments)
-            };
-
-            if(!f._fbq)f._fbq=n;
-
-            n.push=n;
-            n.loaded=!0;
-            n.version='2.0';
-            n.queue=[];
-
-            t=b.createElement(e);
-            t.async=!0;
-            t.src=v;
-
-            s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)
-        }(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-
-        // ===== 在这里填写你的 Meta Pixel ID =====
-        fbq('init', '2486355955184193');
-
-        // 页面浏览事件
-        fbq('track', 'PageView');
+    <!-- ==========================================================================
+         1. Microsoft Clarity 流量与热力图监控（已填入你的 Project ID: ys8vvab4xk）
+         ========================================================================== -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ys8vvab4xk");
     </script>
 
-    <!-- 如果浏览器禁用了 JavaScript，可保留这部分 -->
+    <!-- ==========================================================================
+         2. Meta Pixel 像素代码（已填入你的 Pixel ID: 1087867780454603）
+         ========================================================================== -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1087867780454603');
+    fbq('track', 'PageView');
+    </script>
     <noscript>
-        <img height="1"
-             width="1"
-             style="display:none"
-             src="https://www.facebook.com/tr?id=2486355955184193&ev=PageView&noscript=1"/>
+        <img height="1" width="1" style="display:none" 
+             src="https://www.facebook.com/tr?id=1087867780454603&ev=PageView&noscript=1"/>
     </noscript>
 
     <style>
+        /* 全局样式与暗黑奢华风基调 */
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: #171717;
+            --accent-gold: #d4af37;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --wa-green: #25D366;
+        }
+
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
         body {
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                "PingFang SC",
-                "Microsoft YaHei",
-                Arial,
-                sans-serif;
-
-            background: #f6f6f4;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        .page {
-            width: 100%;
-            max-width: 680px;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            padding-bottom: 90px;
+            max-width: 500px;
             margin: 0 auto;
-            background: #fff;
-            min-height: 100vh;
         }
 
-        /* 产品主图 */
-        .product-image {
+        /* 顶部主图区域与圆形 Logo 叠层 */
+        .hero-container {
+            position: relative;
             width: 100%;
-            display: block;
-            background: #f1f1ef;
+            background: #000;
         }
 
-        .product-image img {
+        .hero-image {
             width: 100%;
             height: auto;
             display: block;
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 4/3;
             object-fit: cover;
         }
 
-        /* 内容区域 */
-        .content {
-            padding: 32px 24px 120px;
+        .logo-overlay {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background: #121212;
+            border: 2px solid var(--accent-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+            z-index: 2;
         }
 
-        .eyebrow {
-            font-size: 12px;
+        .logo-overlay img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        /* 主标题及宣传文案 */
+        .content-section {
+            padding: 45px 20px 20px;
+            text-align: center;
+        }
+
+        .tagline {
+            color: var(--accent-gold);
+            font-size: 0.75rem;
+            font-weight: 700;
             letter-spacing: 2px;
-            color: #888;
             text-transform: uppercase;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         h1 {
-            font-size: 28px;
-            line-height: 1.35;
-            font-weight: 600;
-            margin-bottom: 14px;
-            color: #171717;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+            line-height: 1.2;
         }
 
         .subtitle {
-            font-size: 15px;
-            color: #777;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        /* 正文高转化内嵌按钮 */
+        .inline-cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--wa-green);
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
             margin-bottom: 30px;
         }
 
-        /* 三个核心优势 */
-        .advantages {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
+        /* 核心优势与信任背书模块 */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 25px;
         }
 
-        .advantage {
-            display: flex;
-            align-items: flex-start;
-            padding: 18px;
-            background: #f7f7f5;
-            border-radius: 12px;
+        .trust-card {
+            background: var(--card-bg);
+            padding: 15px 12px;
+            border-radius: 10px;
+            border: 1px solid #262626;
+            text-align: left;
         }
 
-        .number {
-            width: 30px;
-            height: 30px;
-            min-width: 30px;
-            border-radius: 50%;
-            background: #222;
-            color: #fff;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            font-size: 13px;
-            margin-right: 14px;
+        .trust-card-icon {
+            font-size: 1.3rem;
+            margin-bottom: 6px;
         }
 
-        .advantage h3 {
-            font-size: 16px;
-            font-weight: 600;
+        .trust-card-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent-gold);
             margin-bottom: 4px;
         }
 
-        .advantage p {
-            font-size: 13px;
-            color: #777;
+        .trust-card-desc {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            line-height: 1.3;
         }
 
-        /* 底部固定按钮 */
-        .bottom-bar {
+        /* 看货流程说明 */
+        .workflow-box {
+            background: var(--card-bg);
+            border-left: 3px solid var(--accent-gold);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .workflow-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .workflow-steps {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            padding-left: 18px;
+        }
+
+        .workflow-steps li {
+            margin-bottom: 6px;
+        }
+
+        /* 底部固定吸底大按钮 */
+        .sticky-footer {
             position: fixed;
-            left: 0;
             bottom: 0;
-            width: 100%;
-
+            left: 0;
+            right: 0;
+            background: rgba(13, 13, 13, 0.95);
+            backdrop-filter: blur(10px);
             padding: 12px 16px;
-
-            background: rgba(255, 255, 255, 0.96);
-            border-top: 1px solid #eee;
-
+            border-top: 1px solid #222;
             z-index: 999;
+            display: flex;
+            justify-content: center;
         }
 
-        .whatsapp-button {
+        .sticky-btn {
             width: 100%;
-            max-width: 648px;
-            margin: 0 auto;
-
+            max-width: 460px;
+            background: linear-gradient(135deg, #25D366 0%, #1eaa52 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
-
-            min-height: 52px;
-
-            border: none;
-            border-radius: 10px;
-
-            background: #25D366;
-            color: #fff;
-
-            font-size: 16px;
-            font-weight: 600;
-
-            text-decoration: none;
-            cursor: pointer;
-
-            transition: all 0.2s ease;
+            gap: 10px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            animation: pulse 2s infinite;
         }
 
-        .whatsapp-button:hover {
-            background: #20bd5a;
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
         }
 
-        .whatsapp-button:active {
-            transform: scale(0.98);
-        }
-
-        .whatsapp-icon {
-            margin-right: 8px;
-            font-size: 20px;
-        }
-
-        /* 桌面端 */
-        @media (min-width: 681px) {
-            body {
-                padding: 30px 0;
-            }
-
-            .page {
-                border-radius: 16px;
-                overflow: hidden;
-                box-shadow: 0 10px 40px rgba(0,0,0,0.06);
-            }
-
-            .bottom-bar {
-                position: static;
-                background: transparent;
-                border: none;
-                padding: 0 24px 30px;
-            }
-
-            .whatsapp-button {
-                max-width: none;
-            }
+        .wa-svg-icon {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
         }
     </style>
 </head>
-
 <body>
 
-<div class="page">
-
-    <!-- ==============================
-         产品主图
-         把下面的图片地址替换成你的产品图片
-         ============================== -->
-    <div class="product-image">
-        <img
-            src="collection.png"
-            alt="Outdoor Furniture"
-        >
+    <!-- 1. 顶部产品主图与圆形 Logo 叠层 -->
+    <div class="hero-container">
+        <img class="hero-image" src="微信图片_20261002111820_18_55.jpg" alt="Super Clone Watch Hero">
+        <div class="logo-overlay">
+            <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=150&q=80" alt="Logo">
+        </div>
     </div>
 
+    <!-- 2. 主体文案与转化引导 -->
+    <div class="content-section">
+        <p class="tagline">GENEVA CRAFTSMANSHIP • 1:1 EDITION</p>
+        <h1>Bespoke Super Clone Watches</h1>
+        <p class="subtitle">1:1 Original Disassembly Craftsmanship, 904L Steel & Custom Integrated Movement.</p>
 
-    <main class="content">
-
-        <div class="eyebrow">
-            Top-level cloning
-        </div>
-
-        <h1>
-           Discover high-precision, premium Swiss-inspired timepieces and luxury accessories crafted with superior movements and crystal sapphire glass—enjoy secure PayPal checkout, pre-shipment HD quality check videos, and guaranteed risk-free worldwide express delivery at a fraction of the cost.
-        </h1>
-
-        <p class="subtitle">
-           Why Choose Us
-        </p>
-
-
-        <!-- ==============================
-             三条产品核心优势
-             ============================== -->
-        <div class="advantages">
-
-            <div class="advantage">
-                <div class="number">01</div>
-
-                <div>
-                    <h3>high-quality</h3>
-                    <p>
-                        Features a high-quality Swiss movement and a sapphire crystal.。
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="advantage">
-                <div class="number">02</div>
-
-                <div>
-                    <h3>Safety and Security</h3>
-                    <p>
-                        Secure PayPal payments accepted; Swiss movement calibration provided; high-definition, comprehensive QC video supplied prior to shipment.。
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="advantage">
-                <div class="number">03</div>
-
-                <div>
-                    <h3>Logistics and Distribution</h3>
-                    <p>
-                        We offer discreet customs clearance and fully insured global express shipping, ensuring zero risk of customs inspection and rapid delivery within 5–10 days.。
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </main>
-
-
-    <!-- ==============================
-         WhatsApp 底部按钮
-         ============================== -->
-    <div class="bottom-bar">
-
-        <a
-            class="whatsapp-button"
-            href="https://wa.me/8618943593639"
-            target="_blank"
-            rel="noopener noreferrer"
-            onclick="trackWhatsAppClick()"
-        >
-            <span class="whatsapp-icon">◉</span>
-            WhatsAppGet a VIP Quote
+        <!-- 正文中的主要点击理由按钮 -->
+        <a href="https://wa.me/8618943593639?text=Hi,%20I%20want%20to%20see%20live%20videos%20and%20catalog%20for%20Super%20Clone%20watches." 
+           class="inline-cta-btn" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="trackWhatsAppClick()">
+            <svg class="wa-svg-icon" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Chat on WhatsApp for Live QC Video
         </a>
 
+        <!-- 3. 4大信任背书模块 -->
+        <div class="trust-grid">
+            <div class="trust-card">
+                <div class="trust-card-icon">💎</div>
+                <div class="trust-card-title">904L Steel</div>
+                <div class="trust-card-desc">Genuine Swiss grade material with identical weight & sheen.</div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-card-icon">⚙️</div>
+                <div class="trust-card-title">Clone Caliber</div>
+                <div class="trust-card-desc">1:1 custom movement, 28,800 vph smooth sweeping second hand.</div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-card-icon">📹</div>
+                <div class="trust-card-title">Pre-Shipment QC</div>
+                <div class="trust-card-desc">Detailed HD video & timegrapher test before dispatch.</div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-card-icon">✈️</div>
+                <div class="trust-card-title">Safe Delivery</div>
+                <div class="trust-card-desc">Guaranteed customs clearance & worldwide express shipping.</div>
+            </div>
+        </div>
+
+        <!-- 4. 订购流程 -->
+        <div class="workflow-box">
+            <div class="workflow-title">How to Order via WhatsApp:</div>
+            <ol class="workflow-steps">
+                <li>Click the button below to message us.</li>
+                <li>Request live videos/catalog of any model.</li>
+                <li>Receive QC video & tracking code after order.</li>
+            </ol>
+        </div>
     </div>
 
-</div>
+    <!-- 5. 底部固定吸底 WhatsApp 按钮 -->
+    <div class="sticky-footer">
+        <a href="https://wa.me/8618943593639?text=Hi,%20I%20came%20from%20your%20website.%20Can%20I%20get%20a%20VIP%20quote%20and%20catalog?" 
+           class="sticky-btn" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="trackWhatsAppClick()">
+            <svg class="wa-svg-icon" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            WhatsApp | Get VIP Quote & Catalog
+        </a>
+    </div>
 
-
-<script>
-    /**
-     * WhatsApp 按钮点击事件
-     *
-     * 用户点击按钮时：
-     * 1. 触发 Meta Pixel Contact 事件
-     * 2. 然后正常跳转 WhatsApp
-     */
-    function trackWhatsAppClick() {
-
-        if (typeof fbq === 'function') {
-            fbq('track', 'Contact');
+    <!-- 6. 点击事件追踪脚本 -->
+    <script>
+        function trackWhatsAppClick() {
+            if (typeof fbq === 'function') {
+                fbq('track', 'Contact');
+            }
         }
-
-    }
-</script>
-
-
+    </script>
+</body>
+</html>
